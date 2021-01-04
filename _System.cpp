@@ -56,11 +56,11 @@ void _System::initialise()
     al_set_new_display_refresh_rate(60);
     al_set_new_display_flags(ALLEGRO_WINDOWED | ALLEGRO_PROGRAMMABLE_PIPELINE | ALLEGRO_OPENGL);
 
-    al_set_new_display_option(ALLEGRO_SAMPLE_BUFFERS, 1, ALLEGRO_REQUIRE);
-    al_set_new_display_option(ALLEGRO_SAMPLES, 16, ALLEGRO_REQUIRE);
-    al_set_new_display_option(ALLEGRO_RENDER_METHOD, 1, ALLEGRO_REQUIRE);
-    al_set_new_display_option(ALLEGRO_VSYNC, 1, ALLEGRO_REQUIRE);
-    al_set_new_display_option(ALLEGRO_SUPPORT_NPOT_BITMAP, 1, ALLEGRO_REQUIRE);
+    al_set_new_display_option(ALLEGRO_SAMPLE_BUFFERS, 1, ALLEGRO_SUGGEST);
+    al_set_new_display_option(ALLEGRO_SAMPLES, 16, ALLEGRO_SUGGEST);
+    al_set_new_display_option(ALLEGRO_RENDER_METHOD, 1, ALLEGRO_SUGGEST);
+    al_set_new_display_option(ALLEGRO_VSYNC, 1, ALLEGRO_SUGGEST);
+    al_set_new_display_option(ALLEGRO_SUPPORT_NPOT_BITMAP, 1, ALLEGRO_SUGGEST);
 
 
 	display = al_create_display(1280, 720);
